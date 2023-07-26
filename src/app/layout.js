@@ -1,9 +1,13 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Gothic_A1 } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const gothicA1 = Gothic_A1({
+  weight: ["400", "500", "600"],
+  style: ["normal"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Online store",
@@ -13,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={gothicA1.className}>
         <Header />
         {children}
         <Footer />
