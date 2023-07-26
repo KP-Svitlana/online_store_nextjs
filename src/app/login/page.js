@@ -4,7 +4,9 @@ const Login = () => {
   return (
     <>
       <h3 className="font-bold">Login Page</h3>
-      <Link href="/signUp">Sign Up</Link>
+      <Link className="mr-2.5" href="/signUp">
+        Sign Up
+      </Link>
       <Link href="/">Home</Link>
     </>
   );
