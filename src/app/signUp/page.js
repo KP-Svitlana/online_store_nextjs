@@ -1,5 +1,13 @@
+import Link from "next/link";
+
 const Signup = () => {
-  return <div>SingUp Page</div>;
+  return (
+    <>
+      <h3 className="font-bold">SignUp Page</h3>
+      <Link href="/login">Login</Link>
+      <Link href="/">Home</Link>
+    </>
+  );
 };
 
 export default Signup;
