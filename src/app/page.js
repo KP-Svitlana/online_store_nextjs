@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import Products from "@/app/pages/Products";
+import Products from "@/pages/Products";
 
 export default function Home() {
   return (

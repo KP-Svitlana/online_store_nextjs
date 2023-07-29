@@ -1,3 +1,5 @@
+// import '@tailwindcss/aspect-ratio';
+// import '@/app/globals.css';
 
 import ProductsList from "@/components/ProductsList/ProductsList";
 import axios from "axios";
@@ -9,7 +11,7 @@ export const getStaticProps = async () => {
         if (!dataProducts) {
             return {
                 notFound: true,
-            }
+            };
         }
 
         // const salesRes = await axios.get('URL_TO_SALES_API');
@@ -40,10 +42,10 @@ export const getStaticProps = async () => {
 export default function Products({products}) {
     console.log(products)
     return (
-        <>
-            <h2>Новинки</h2>
-            <ProductsList products={products}/>
-        </>
+        <section  className="bg-sky-500">
+            <h2 className="text-3xl ">Новинки</h2>
+            <ProductsList products={products} />
+        </section>
     );
 };
 

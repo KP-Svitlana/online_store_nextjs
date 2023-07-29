@@ -1,4 +1,4 @@
-import {ColorSquare} from "./ColorSquare.jsx";
+import ColorSquare from "./ColorSquare.jsx";
 
 export default function ColorList ({colors}) {
     const colorsToRender = colors?.slice(0, 3);
